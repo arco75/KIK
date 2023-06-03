@@ -11,6 +11,8 @@ button.addEventListener("click",startGry);
  */
 function startGry(){
 
+    document.querySelectorAll(".gracz")[0].disabled=true;  
+    document.querySelectorAll(".gracz")[1].disabled=true;  
     for(let n = 0; n<pole.length; n++){
         pole[n].addEventListener("mouseover", zaznacz);
         pole[n].addEventListener("mouseout", zaznaczOFF);
