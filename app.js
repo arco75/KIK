@@ -2,12 +2,22 @@
 
 var znak=true;
 const pole = document.querySelectorAll("td");
+const button = document.querySelector("#button");
 
-for(let n = 0; n<pole.length; n++){
-    pole[n].addEventListener("mouseover", zaznacz);
-    pole[n].addEventListener("mouseout", zaznaczOFF);
-    pole[n].addEventListener("click",wstawZnak);
+button.addEventListener("click",startGry);
+
+/**
+ * Uruchamienie interakcji na obiekty <td>.
+ */
+function startGry(){
+
+    for(let n = 0; n<pole.length; n++){
+        pole[n].addEventListener("mouseover", zaznacz);
+        pole[n].addEventListener("mouseout", zaznaczOFF);
+        pole[n].addEventListener("click",wstawZnak);
+    }
 }
+
 
 /**
  * Funkcja zaznacza obszar po najechaniu myszką
