@@ -1,3 +1,10 @@
+/** TicTacToe v.0.6
+ * 
+ * Artur Pelo / 03.06.2023
+ * artur.pelo@gmail.com
+ */
+
+
 //Sekcja podpiecia zdarzeń do elementów td i definicji zmiennych
 
 var znak=true;
