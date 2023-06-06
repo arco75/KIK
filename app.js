@@ -3,10 +3,10 @@
  * 
  * Artur Pelo / 03.06.2023
  * artur.pelo@gmail.com
- */
+ ****************************************************************/
 
 
-//Sekcja podpiecia zdarzeń do elementów td i definicji zmiennych
+//Sekcja podpiecia zdarzeń do elementów <td> i definicji zmiennych
 
 var znak=true;
 const pole = document.querySelectorAll("td");
@@ -38,7 +38,7 @@ function zaznacz(event){
 }
 
 /****************************************************************
- * Funckja kasująca zaznaczenie obszar po zjechaniu myszki
+ * Funkcja kasująca zaznaczenie obszar po zjechaniu myszki
  * @param {pointer} event - obiekt na którym dokonano zdarzenia
  */
 function zaznaczOFF(event){
@@ -49,15 +49,14 @@ function zaznaczOFF(event){
  * @param {pointer} event - wskaźnik na obiekt
  */
 function wstawZnak(event){
-    console.dir(event.target);
     if(event.target.innerHTML==""){
         if(znak) {
             event.target.innerHTML="X";
-            event.target.style.backgroundColor="#FFAAAA";
+            event.target.style.backgroundColor="#FFBBBB";
             znak=false;
         }else{
             event.target.innerHTML="O";
-            event.target.style.backgroundColor="#AAAAFF";
+            event.target.style.backgroundColor="#BBBBFF";
             znak=true;
         };
     };
